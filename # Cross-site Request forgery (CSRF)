@@ -1,0 +1,4 @@
+I practiced cross-Site Request Forgery (CSRF) using portSwigger Web Security Academy.
+I learned that CSRF is a vulnerability where a victim can be tricked into sending an unwanted request to a website where they are already authenticated.
+I practiced identifying CSRF in an authorized Lab envionment and Learned how CSRF tokens and other security controls can help prevent CSRF attacks.
+**Satus** Completed
