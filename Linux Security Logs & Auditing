@@ -1,0 +1,15 @@
+**Objective**
+To learn how to inspect Linux security logs and understand file permission and login records.
+
+**Tasks performed**
+- Inspected the /var/log directory.
+- Checked wtmp for login/session history.
+- Checked btmp for failed login attempts.
+- Examined permission and ownership of security log files.
+- Checked permission on the /var/log ditrctory.
+- Used journalctl to check system journal logs.
+
+**Key learning:**
+Linux logs help security professionals monitor system activity, investigate login attempts, and identify possible security issues. File permission help prevent unauthorized users from modifying important security logs.
+
+Environment: ubuntu Linux (WLS)
