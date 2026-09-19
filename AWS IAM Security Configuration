@@ -1,0 +1,45 @@
+**Objective**
+To understand how AWS Identity and Access Management (IAM) is used to control access to AWS resources and improve account security.
+
+What I Practiced
+- Reviwed an IAM user configuration.
+- Configured Multi-Factor Authentication (MFA).
+- Checked the user's access keys and confirmed that no access key was created.
+- Reviewed the IAMReadonlyAcess permission policy.
+
+Security Concepts Learned
+1. 
+IAM controls who can access AWS resources and what actions they are allowed to perform.
+
+2.MFA
+MFA provide an additional layer of security by requiring an authentication code in additon to a password.
+
+3.Access Keys
+Access keys can be used by applications, scripts, or the AWS CLI to make programmatic request to AWS. No access key created during this practical.
+
+4.IAM
+IAM policies define what actions an identity is allowed or denied to perform on AWS resources.
+
+5.IAMReadonlyAcccess
+The IAMReadonlyAcccess policy provides read-only access to IAM information rather than broad permisssion to modify IAM resources.
+
+Evidence
+-IAM-Security-Recommendations.png
+-IAM-No-Users.png
+-IAM-Users-Created.png
+-IAM-Readonly-Access.png
+-IAM-Roles.png
+AWS-IAM-MFA-Enable.png
+AWS-IAM-No-Access-Key.png
+AWS-IAM-Readonly-Policy-JSON.png
+
+Result
+I successfully reviwed and secured an AWS IAM User by configuring MFA, checking access-key status, and analyzing policy.
+
+Skill Demonstrated
+- AWS IAM
+- Identity and Access Management 
+- MFA
+- Access control
+- IAM policies
+Basic cloud security
