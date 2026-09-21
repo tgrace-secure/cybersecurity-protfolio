@@ -1,0 +1,50 @@
+Objective
+To learn how to securely configure an Amazon S3 bucket and protect stored objects from unauthorized or public access.
+
+What I Practiced
+1. Created an S3 Bucket
+Created the bucket:
+taiwo-cloud-security-practical-6
+The bucket was configured with security-focused settings.
+
+2. Blocked Public Access
+Enabled Block all public access.
+This prevents the bucket and its objects from being publicly accessible through common S3 public-access configurations.
+
+3. Object Ownership
+Configured Object Ownership with ACLs disabled.
+This allows the bucket owner to control ownership without relying on traditional S3 Access Control Lists.
+
+4. Bucket Versioning
+Kept Versioning disabled for this practical.
+Versioning allows S3 to retain previous versions of objects when they are changed or deleted.
+
+5. Default Encryption
+Configured Server-side encryption with Amazon S3 managed keys (SSE-S3).
+This means S3 automatically encrypts objects stored in the bucket.
+
+6. Uploaded an Object
+Uploaded a test file named:
+techStore
+The upload was successful.
+
+7. Checked Object Permissions
+Inspected the Access Control List (ACL) for the techStore object and confirmed that public access was not being granted.
+Security Concepts Learned
+Amazon S3 buckets and objects
+S3 public-access protection
+Object Ownership
+S3 ACLs
+Bucket Versioning
+Server-side encryption
+SSE-S3
+Basic S3 access control
+
+Evidence
+Screenshots saved:
+S3-Practical-6-Bucket-Security-Settings.png
+S3-Practical-6-Object-Ownership.png
+S3-Practical-6-Versioning-Disabled.png
+S3-Practical-6-Default-Encryption.png
+S3-Practical-6-Object-ACL.png
+S3-Practical-6-Block-Public-Access.png
