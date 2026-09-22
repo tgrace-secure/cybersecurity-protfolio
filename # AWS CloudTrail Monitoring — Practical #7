@@ -1,0 +1,57 @@
+
+
+## Objective
+
+To understand how AWS CloudTrail records and monitors activity within an AWS account for security auditing and investigation.
+
+## What I Practiced
+
+- Created an AWS CloudTrail trail.
+- Configured the trail to store logs in Amazon S3.
+- Enabled management event logging.
+- Configured the trail to record all management events.
+- Reviewed CloudTrail Event History.
+- Verified that AWS activities performed during the practical were recorded.
+
+## Security Concepts Learned
+
+### 1. AWS CloudTrail
+
+AWS CloudTrail records activity within an AWS account and provides information about actions performed on AWS resources.
+
+### 2. Management Events
+
+Management events record control-plane activities such as creating, modifying, or deleting AWS resources and changing security configurations.
+
+### 3. Event History
+
+CloudTrail Event History allows administrators and security teams to review recent AWS activity and investigate actions performed within the account.
+
+### 4. Security Auditing
+
+CloudTrail can help with security investigations by providing information about activities such as who performed an action, what action was performed, and when it occurred.
+
+### 5. S3 Log Storage
+
+The CloudTrail trail was configured to store its logs in an Amazon S3 bucket for longer-term storage and auditing.
+
+## Evidence
+
+- AWS-CloudTrail-Practical-7-Trail-Settings.png
+- AWS-CloudTrail-Practical-7-Trail-Created.png
+- AWS-CloudTrail-Practical-7-Management-Events.png
+- AWS-CloudTrail-Practical-7-Event-History.png
+
+## Result
+
+I successfully created and configured an AWS CloudTrail trail, enabled management event logging, and verified through Event History that AWS activities were being recorded.
+
+## Skills Demonstrated
+
+- AWS CloudTrail
+- Cloud security monitoring
+- Security auditing
+- AWS management events
+- Event investigation
+- Amazon S3 log storage
+- AWS account activity monitoring
