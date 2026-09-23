@@ -1,0 +1,98 @@
+## Objective
+
+To understand how AWS VPC networking works and how different network security controls manage traffic between AWS resources and the internet.
+
+## What I Practiced
+
+- Reviewed the default AWS VPC.
+- Examined the VPC IPv4 CIDR range.
+- Inspected a subnet within the VPC.
+- Reviewed the subnet IPv4 CIDR range.
+- Examined the route table associated with the network.
+- Reviewed the Internet Gateway attached to the VPC.
+- Examined Security Group inbound and outbound rules.
+- Reviewed Network ACL inbound and outbound rules.
+
+## Security Concepts Learned
+
+### 1. VPC
+
+A Virtual Private Cloud (VPC) is an isolated network environment used to host and organize AWS resources.
+
+### 2. CIDR
+
+CIDR notation defines the IP address range available within a VPC or subnet.
+
+The VPC used in this practical had the CIDR:
+
+`172.31.0.0/16`
+
+### 3. Subnet
+
+A subnet is a smaller network section inside a VPC where AWS resources can be placed.
+
+The subnet inspected during this practical had the CIDR:
+
+`172.31.0.0/20`
+
+### 4. Route Tables
+
+Route tables determine where network traffic is directed.
+
+The inspected route table contained:
+
+- `172.31.0.0/16` → `local`
+- `0.0.0.0/0` → Internet Gateway
+
+### 5. Internet Gateway
+
+An Internet Gateway provides a path between a VPC and the internet when the appropriate routing and resource configuration allow it.
+
+The Internet Gateway inspected during this practical was attached to the default VPC.
+
+### 6. Security Groups
+
+Security Groups act as virtual firewalls for AWS resources.
+
+I reviewed both:
+
+- Inbound rules
+- Outbound rules
+
+### 7. Network ACLs
+
+Network Access Control Lists (NACLs) provide traffic control at the subnet level.
+
+I reviewed both:
+
+- Inbound rules
+- Outbound rules
+
+The default NACL contained an allow rule followed by the default `*` deny rule.
+
+## Evidence
+
+- AWS-VPC-Practical-8-VPC-CIDR.png
+- AWS-VPC-Practical-8-Subnet-CIDR.png
+- AWS-VPC-Practical-8-Route-Table.png
+- AWS-VPC-Practical-8-Internet-Gateway.png
+- AWS-VPC-Practical-8-Security-Group-Inbound.png
+- AWS-VPC-Practical-8-Security-Group-Outbound.png
+- AWS-VPC-Practical-8-NACL-Inbound.png
+- AWS-VPC-Practical-8-NACL-Outbound.png
+
+## Result
+
+I successfully reviewed the main components of AWS VPC networking and examined how routing, Internet Gateways, Security Groups, and Network ACLs are used to control and secure network traffic.
+
+## Skills Demonstrated
+
+- AWS VPC
+- IPv4 and CIDR
+- Subnetting
+- Route tables
+- Internet Gateways
+- Security Groups
+- Network ACLs
+- Cloud network security
+- Network traffic control
