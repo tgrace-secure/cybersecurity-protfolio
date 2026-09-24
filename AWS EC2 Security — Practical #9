@@ -1,0 +1,65 @@
+Objective
+To understand how to securely deploy and manage a virtual server using Amazon EC2, including instance configuration, network security, SSH access, and storage security.
+
+What I Practiced
+Launched an Amazon EC2 instance.
+Selected an Amazon Linux AMI.
+Used the t3.micro instance type.
+Created a dedicated EC2 key pair.
+Configured a .pem private key.
+Configured the instance to use the default VPC.
+Enabled a public IPv4 address.
+Created a security group for the instance.
+Reviewed SSH access on port 22.
+Reviewed outbound traffic rules.
+Inspected the instance's networking information.
+Checked the EBS root volume and its encryption status.
+Reviewed the EC2 instance configuration and security settings.
+
+Security Concepts Learned
+
+1. EC2
+EC2 provides virtual servers that can be used to run applications and services in the AWS cloud.
+
+2. Key Pairs
+An EC2 key pair is used to securely authenticate when connecting to an instance. The private .pem key must be kept secret.
+
+3. Security Groups
+Security groups act as virtual firewalls that control inbound and outbound traffic for EC2 instances.
+
+4. SSH — Port 22
+SSH uses TCP port 22 for remote administration of Linux servers.
+
+5. Public and Private IP Addresses
+The public IP can provide internet connectivity to the instance, while the private IP is used for communication inside the VPC.
+
+6. EBS Encryption
+EBS encryption protects data stored on the EC2 instance's attached storage.
+
+Evidence
+Use the screenshots we already captured:
+AWS-EC2-Practical-9-Launch-Configuration.png
+AWS-EC2-Practical-9-Instance-Running.png
+AWS-EC2-Practical-9-SSH-Inbound-Rule.png
+AWS-EC2-Practical-9-SSH-Outbound-Rule.png
+AWS-EC2-Practical-9-Networking-Details.png
+AWS-EC2-Practical-9-EBS-Encryption-Status.png
+
+Security Observation
+The EC2 security group currently allows SSH access on port 22 from 0.0.0.0/0. This means SSH connection attempts can originate from any IPv4 address, although authentication is still required.
+For a production environment, SSH access should normally be restricted to trusted sources where practical.
+The EBS root volume was also observed to be unencrypted during this practical. This is an important security observation because encryption helps protect stored data.
+
+Result
+I successfully deployed an Amazon EC2 instance and reviewed its major security configurations, including key-pair authentication, security-group rules, networking, and EBS storage encryption.
+
+Skills Demonstrated
+Amazon EC2
+Cloud server security
+Security groups
+SSH security
+AWS networking
+Public/private IP addressing
+EBS storage security
+Key-pair management
+Basic cloud security
